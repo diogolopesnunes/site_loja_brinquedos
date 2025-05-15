@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/carrinho.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Carrinho de Compras - Brinquedos Incríveis</title>
+    <title>Carrinho - Brinquedos Incríveis</title>
 </head>
 <body>
     <header>
@@ -23,57 +22,58 @@
         </div>
     </header>
 
-    <div class="container carrinho-pagina">
-        <h1>Seu Carrinho de Compras</h1>
+    <main class="carrinho-container">
+        <h2 class="carrinho-titulo"><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
 
         <div class="carrinho-itens">
             <div class="carrinho-item">
-                <img src="img/snoopy.webp" alt="Boneco Snoopy">
-                <div class="item-detalhes">
-                    <h3>Boneco Snoopy</h3>
-                    <p class="preco-item">R$80.00</p>
-                    <div class="quantidade">
-                        <label for="quantidade-1">Quantidade:</label>
-                        <input type="number" id="quantidade-1" value="1" min="1" disabled>
-                    </div>
+                <img src="img/snoopy.webp" alt="Boneco Snoopy" class="item-imagem">
+                <div class="item-info">
+                    <h3>Snoopy</h3>
+                    <p class="item-categoria">Bonecos</p>
+                    <p class="item-preco">R$ 80,00</p>
                 </div>
-                <span class="remover-item"><i class="fas fa-trash-alt"></i></span>
+                <div class="item-quantidade">
+                    <button class="quantidade-btn">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="quantidade-btn">+</button>
+                </div>
+                <button class="remover-item"><i class="fas fa-trash"></i></button>
             </div>
 
             <div class="carrinho-item">
-                <img src="img/labubu.webp" alt="Pelúcia Labubu">
-                <div class="item-detalhes">
-                    <h3>Pelúcia Labubu</h3>
-                    <p class="preco-item">R$300.00</p>
-                    <div class="quantidade">
-                        <label for="quantidade-2">Quantidade:</label>
-                        <input type="number" id="quantidade-2" value="1" min="1" disabled>
-                    </div>
+                <img src="img/labubu.webp" alt="Pelúcia Labubu" class="item-imagem">
+                <div class="item-info">
+                    <h3>Labubu</h3>
+                    <p class="item-categoria">Pelucias</p>
+                    <p class="item-preco">R$ 300,00</p>
                 </div>
-                <span class="remover-item"><i class="fas fa-trash-alt"></i></span>
-            </div>
-
-            <div class="carrinho-item">
-                <img src="img/tubos_de_montar.webp" alt="Tubo Mania Tubos de Montar">
-                <div class="item-detalhes">
-                    <h3>Tubo Mania Tubos de Montar</h3>
-                    <p class="preco-item">R$120.00</p>
-                    <div class="quantidade">
-                        <label for="quantidade-3">Quantidade:</label>
-                        <input type="number" id="quantidade-3" value="1" min="1" disabled>
-                    </div>
+                <div class="item-quantidade">
+                    <button class="quantidade-btn">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="quantidade-btn">+</button>
                 </div>
-                <span class="remover-item"><i class="fas fa-trash-alt"></i></span>
+                <button class="remover-item"><i class="fas fa-trash"></i></button>
             </div>
         </div>
 
-        <div class="carrinho-total">
-            <p>Subtotal: <span id="subtotal">R$500.00</span></p>
-            <p>Frete: <span id="frete">A calcular</span></p>
-            <p class="total">Total: <span id="total">R$500.00</span></p>
+        <div class="carrinho-resumo">
+            <div class="resumo-titulo">Resumo do Pedido</div>
+            <div class="resumo-linha">
+                <span>Subtotal:</span>
+                <span class="subtotal">R$ 380,00</span>
+            </div>
+            <div class="resumo-linha">
+                <span>Frete:</span>
+                <span class="frete">R$ 15,00</span>
+            </div>
+            <div class="resumo-linha total">
+                <span>Total:</span>
+                <span class="valor-total">R$ 395,00</span>
+            </div>
             <button class="finalizar-compra">Finalizar Compra</button>
         </div>
-    </div>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-content">
@@ -87,6 +87,7 @@
                 <ul>
                     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
                     <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
                 </ul>
             </div>
@@ -110,7 +111,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2023 Brinquedos Incríveis. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Brinquedos Incríveis. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
