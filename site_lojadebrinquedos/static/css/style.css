@@ -36,12 +36,18 @@ body {
 
 /* Banner */
 .banner {
-    height: 400px;
+    height: 550px;
     background-color: #4ECDC4;
-    margin-top: 50px;
-    background-image: url("placeholder.png");
+    margin-top: 100px;
+    margin-left: auto;
+    background-image: url("img/placeholder.png");
     background-size: cover;
     background-position: center;
+}
+
+.banner img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /* Seções */
